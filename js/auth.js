@@ -1,28 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const protectedPages = ["", "index.html", "packages.html", "booking.html", "contact.html"];
 
-    const protectedPages = [
+  const currentPage = window.location.pathname.split("/").pop();
 
-        "index.html",
-        "packages.html",
-        "booking.html",
-        "contact.html"
+  if (protectedPages.includes(currentPage)) {
+    const loggedIn = localStorage.getItem("travelUserLoggedIn");
 
-    ];
-
-    const currentPage =
-        window.location.pathname.split("/").pop();
-
-    if (protectedPages.includes(currentPage)) {
-
-        const loggedIn =
-            localStorage.getItem("travelUserLoggedIn");
-
-        if (!loggedIn) {
-
-            window.location.href = "auth.html";
-
-        }
-
+    if (!loggedIn) {
+      window.location.href = "auth.html";
     }
-
+  }
 });
