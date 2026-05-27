@@ -143,6 +143,13 @@ document.addEventListener("DOMContentLoaded", function () {
         top: 0,
         behavior: "smooth"
       });
+      window.addEventListener("load", () => {
+  const loader = document.getElementById("preloader");
+
+  if (loader) {
+    loader.style.display = "none";
+  }
+});
     });
   }
 });
