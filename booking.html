@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - EnjoyYourTrip</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <div id="toastBox"></div>
+
+    <button id="themeToggle" class="theme-toggle">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <button id="backToTop" class="back-top-btn">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <nav class="navbar navbar-expand-lg fixed-top travel-navbar">
+
+        <div class="container">
+
+            <a class="navbar-brand travel-logo" href="index.html">
+                <i class="fa-solid fa-compass"></i>
+                EnjoyYourTrip
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="packages.html">Packages</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="booking.html">Booking</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <section class="page-hero">
+
+        <div class="container text-center">
+
+            <span class="hero-badge">
+                Travel Booking
+            </span>
+
+            <h1>
+                Book Your Dream Vacation
+            </h1>
+
+            <p>
+                Fill the form and reserve your luxury travel package.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section class="booking-section py-5">
+
+        <div class="container">
+
+            <div class="row g-5 align-items-center">
+
+                <div class="col-lg-6">
+
+                    <div class="booking-image">
+
+                        <img src="https://images.unsplash.com/photo-1503220317375-aaad61436b1b?auto=format&fit=crop&w=900&q=80"
+                            class="img-fluid rounded-5">
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="booking-form-box">
+
+                        <h2>
+                            Booking Form
+                        </h2>
+
+                        <p>
+                            Start your unforgettable journey with EnjoyYourTrip.
+                        </p>
+
+                        <form id="bookingForm">
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-4">
+
+                                    <input type="text" class="form-control travel-input" id="fullName"
+                                        placeholder="Full Name" required>
+
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+
+                                    <input type="email" class="form-control travel-input" id="email"
+                                        placeholder="Email Address" required>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-4">
+
+                                    <input type="number" class="form-control travel-input" id="phone"
+                                        placeholder="Phone Number" required>
+
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+
+                                    <select class="form-select travel-input" id="destination" required>
+
+                                        <option value="">
+                                            Select Destination
+                                        </option>
+
+                                        <option>
+                                            Goa
+                                        </option>
+
+                                        <option>
+                                            Dubai
+                                        </option>
+
+                                        <option>
+                                            Maldives
+                                        </option>
+
+                                        <option>
+                                            Kashmir
+                                        </option>
+
+                                        <option>
+                                            Switzerland
+                                        </option>
+
+                                        <option>
+                                            Bali
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-4">
+
+                                    <input type="date" class="form-control travel-input" required>
+
+                                </div>
+
+                                <div class="col-md-6 mb-4">
+
+                                    <input type="number" class="form-control travel-input" placeholder="Total Travelers"
+                                        required>
+
+                                </div>
+
+                            </div>
+
+                            <div class="mb-4">
+
+                                <textarea rows="5" class="form-control travel-input"
+                                    placeholder="Special Requirements"></textarea>
+
+                            </div>
+
+                            <button type="submit" class="booking-btn">
+
+                                Confirm Booking
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="travel-footer">
+
+        <div class="container text-center">
+
+            <h3>
+                <i class="fa-solid fa-compass"></i>
+                EnjoyYourTrip
+            </h3>
+
+            <p>
+                Premium travel booking website for luxury vacations and unforgettable journeys.
+            </p>
+
+            <p>
+                © 2026 EnjoyYourTrip. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/auth.js"></script>
+
+</body>
+
+</html>
