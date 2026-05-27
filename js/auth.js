@@ -1,5 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const protectedPages = ["", "index.html", "packages.html", "booking.html", "contact.html"];
+  const protectedPages = [
+    "",
+    "index.html",
+    "packages.html",
+    "booking.html",
+    "contact.html"
+  ];
 
   const currentPage = window.location.pathname.split("/").pop();
 
